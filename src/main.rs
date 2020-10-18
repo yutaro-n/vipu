@@ -15,11 +15,11 @@ enum SubCommand {
 
 #[derive(Clap)]
 struct Install {
-    #[clap(long, name="BRANCH_NAME")]
+    #[clap(long, name="BRANCH_NAME", about="Select sepecific branch")]
     branch: Option<String>,
-    #[clap(long, name="BUILD_CMD")]
+    #[clap(long, name="BUILD_CMD", about="Build command for build plugin")]
     build: Option<String>,
-    #[clap(name = "Plugin", multiple=true)]
+    #[clap(name = "plugin", multiple=true)]
     plugin: Vec<String>
 }
 
