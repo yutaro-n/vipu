@@ -1,4 +1,5 @@
 use clap::Clap;
+use git2::{Repository, Error};
 
 #[derive(Clap)]
 #[clap(version = "0.1", author = "Yutaro N. <yutaro.ngsw@gmail.com>")]
